@@ -5,6 +5,14 @@ const mysql = require('mysql');
 const path = require('path');
 const app = express();
 
+// parse requests of content-type - application/json
+app.use(bodyParser.json());
+
+// parse requests of content-type - application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: true }));
+
+
+
 // const {getHomePage} = require('./routes/index');
 // const {addPlayerPage, addPlayer, deletePlayer, editPlayer, editPlayerPage} = require('./routes/player');
 const port = process.env.PORT || 8080; 
@@ -12,12 +20,12 @@ const port = process.env.PORT || 8080;
 // create connection to database
 // the mysql.createConnection function takes in a configuration object which contains host, user, password and the database name.
 //mysql://ba9565c7d6951a:5230e113@us-cdbr-iron-east-02.cleardb.net/heroku_f254459ae2fc71b?reconnect=true 
-//mysql://b70a7d650d0e24:6caed598@us-cdbr-east-04.cleardb.com/heroku_483b33b4622b1d8?reconnect=true
+//mysql://b8e9343b8899d6:2e4e9219@us-cdbr-east-04.cleardb.com/heroku_e4fdf0fa21e6848?reconnect=true
 const db_config = {
   host: 'us-cdbr-east-04.cleardb.com',
-  user: 'be34b7540c0b11', // your database username
-  password: '05ba325e', // your database password
-  database: 'heroku_d603e5c166ccfce',  // FYI export the tshirtshop.sql to this database
+  user: 'b8e9343b8899d6', // your database username
+  password: '2e4e9219', // your database password
+  database: 'heroku_e4fdf0fa21e6848',  // FYI export the tshirtshop.sql to this database
   multipleStatements: true
 }
 
@@ -83,10 +91,16 @@ const customerRoutes = require('./routes/customer');
 const orderRoutes = require('./routes/order');
 
 app.get('/', function (request, response, next) {
-    db.query("SELECT * FROM product", function (error, rows) {
+    db.query("SELECT * FROM category", function (error, rows) {
         return response.json(rows);
     });
 });
+
+
+app.get("/", (req, res) => {
+  res.json({ message: "Welcome to Chukz application." });
+});
+
 
 // set routes to api
 app.use('/api/department', departmentRoutes);
