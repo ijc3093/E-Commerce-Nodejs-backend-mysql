@@ -29,6 +29,15 @@ const db_config = {
   multipleStatements: true
 }
 
+// //This is for nodejs only that connected from mysql
+// const db_config = {
+//   host: 'localhost',
+//   user: 'root', // your database username
+//   password: 'Merciful$100', // your database password
+//   database: 'tshirtshop',  // FYI export the tshirtshop.sql to this database
+//   multipleStatements: true
+// }
+
 var connection;
 
 function handleDisconnect() {
@@ -91,7 +100,7 @@ const customerRoutes = require('./routes/customer');
 const orderRoutes = require('./routes/order');
 
 app.get('/', function (request, response, next) {
-    db.query("SELECT * FROM product", function (error, rows) {
+    db.query("SELECT * FROM category", function (error, rows) {
         return response.json(rows);
     });
 });
