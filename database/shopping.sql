@@ -1,9 +1,10 @@
--- DROP DATABASE IF EXISTS shoppings;
--- CREATE DATABASE IF NOT EXISTS shoppings;
+DROP DATABASE IF EXISTS heroku_e742caad00cb973;
 
--- SHOW DATABASES;
+CREATE DATABASE IF NOT EXISTS heroku_e742caad00cb973;
 
--- USE shoppings;
+SHOW DATABASES;
+
+USE heroku_e742caad00cb973;
 
 -- Create department table
 CREATE TABLE `department` (
@@ -213,17 +214,17 @@ INSERT INTO `product` (`product_id`, `name`, `description`, `price`, `discounted
        (7, 'Apocalypse Tapestry', 'One of the most famous tapestries of the Loire Valley, it dates from the 14th century. The T-shirt is of more recent vintage, however.', 20.00, 18.95, 'new_2017_imac_pro_accessories.gif', 'new_2017_imac_pro_accessories.gif', 'new_2017_imac_pro_accessories.gif', 0),
        (8, 'Centaur', 'There were never any lady centaurs, so these guys had to mate with nymphs and mares. No wonder they were often in such bad moods!', 14.99, 0.00, 'new_2017_imac_pro_accessories.gif', 'new_2017_imac_pro_accessories.gif', 'new_2017_imac_pro_accessories.gif', 0),
        (9, 'Corsica', 'Borrowed from Spain, the "Moor''s head" may have celebrated the Christians'' victory over the Moslems in that country.', 22.00, 0.00, 'new_2017_imac_pro_accessories.gif', 'new_2017_imac_pro_accessories.gif', 'new_2017_imac_pro_accessories.gif', 0),
-       (10, 'Haute Couture', 'This stamp publicized the dress making industry. Use it to celebrate the T-shirt industry!', 15.99, 14.95, 'new_2017_imac_pro_accessories.gif', 'new_2017_imac_pro_accessories.gif', 'new_2017_imac_pro_accessories.gif', 3);
-      --  (11, 'Iris', 'Iris was the Goddess of the Rainbow, daughter of the Titans Thaumas and Electra. Are you up to this T-shirt?!', 17.50, 0.00, 'iris.gif', 'iris-2.gif', 'iris-thumbnail.gif', 0),
-      --  (12, 'Lorraine', 'The largest American cemetery in France is located in Lorraine and most of the folks there still appreciate that fact.', 16.95, 0.00, 'lorraine.gif', 'lorraine-2.gif', 'lorraine-thumbnail.gif', 0),
-      --  (13, 'Mercury', 'Besides being the messenger of the gods, did you know that Mercury was also the god of profit and commerce? This T-shirt is for business owners!', 21.99, 18.95, 'mercury.gif', 'mercury-2.gif', 'mercury-thumbnail.gif', 2),
-      --  (14, 'County of Nice', 'Nice is so nice that it has been fought over for millennia, but now it all belongs to France.', 12.95, 0.00, 'county-of-nice.gif', 'county-of-nice-2.gif', 'county-of-nice-thumbnail.gif', 0),
-      --  (15, 'Notre Dame', 'Commemorating the 800th anniversary of the famed cathedral.', 18.50, 16.99, 'notre-dame.gif', 'notre-dame-2.gif', 'notre-dame-thumbnail.gif', 2),
-      --  (16, 'Paris Peace Conference', 'The resulting treaties allowed Italy, Romania, Hungary, Bulgaria, and Finland to reassume their responsibilities as sovereign states in international affairs and thus qualify for membership in the UN.', 16.95, 15.99, 'paris-peace-conference.gif', 'paris-peace-conference-2.gif', 'paris-peace-conference-thumbnail.gif', 2),
-      --  (17, 'Sarah Bernhardt', 'The "Divine Sarah" said this about Americans: "You are younger than we as a race, you are perhaps barbaric, but what of it? You are still in the molding. Your spirit is superb. It is what helped us win the war." Perhaps we''re still barbaric but we''re still winning wars for them too!', 14.99, 0.00, 'sarah-bernhardt.gif', 'sarah-bernhardt-2.gif', 'sarah-bernhardt-thumbnail.gif', 0),
-      --  (18, 'Hunt', 'A scene from "Les Tres Riches Heures," a medieval "book of hours" containing the text for each liturgical hour of the day. This scene is from a 14th century painting.', 16.99, 15.95, 'hunt.gif', 'hunt-2.gif', 'hunt-thumbnail.gif', 2), 
-      --  (19, 'Italia', 'The War had just ended when this stamp was designed, and even so, there was enough optimism to show the destroyed oak tree sprouting again from its stump! What a beautiful T-shirt!', 22.00, 18.99, 'italia.gif', 'italia-2.gif', 'italia-thumbnail.gif', 2),
-      --  (20, 'Torch', 'The light goes on! Carry the torch with this T-shirt and be a beacon of hope for the world!', 19.99, 17.95, 'torch.gif', 'torch-2.gif', 'torch-thumbnail.gif', 2),
+       (10, 'Haute Couture', 'This stamp publicized the dress making industry. Use it to celebrate the T-shirt industry!', 15.99, 14.95, 'new_2017_imac_pro_accessories.gif', 'new_2017_imac_pro_accessories.gif', 'new_2017_imac_pro_accessories.gif', 3),
+       (11, 'Iris', 'Iris was the Goddess of the Rainbow, daughter of the Titans Thaumas and Electra. Are you up to this T-shirt?!', 17.50, 0.00, 'iris.gif', 'iris-2.gif', 'iris-thumbnail.gif', 0),
+       (12, 'Lorraine', 'The largest American cemetery in France is located in Lorraine and most of the folks there still appreciate that fact.', 16.95, 0.00, 'lorraine.gif', 'lorraine-2.gif', 'lorraine-thumbnail.gif', 0),
+       (13, 'Mercury', 'Besides being the messenger of the gods, did you know that Mercury was also the god of profit and commerce? This T-shirt is for business owners!', 21.99, 18.95, 'mercury.gif', 'mercury-2.gif', 'mercury-thumbnail.gif', 2),
+       (14, 'County of Nice', 'Nice is so nice that it has been fought over for millennia, but now it all belongs to France.', 12.95, 0.00, 'county-of-nice.gif', 'county-of-nice-2.gif', 'county-of-nice-thumbnail.gif', 0),
+       (15, 'Notre Dame', 'Commemorating the 800th anniversary of the famed cathedral.', 18.50, 16.99, 'notre-dame.gif', 'notre-dame-2.gif', 'notre-dame-thumbnail.gif', 2),
+       (16, 'Paris Peace Conference', 'The resulting treaties allowed Italy, Romania, Hungary, Bulgaria, and Finland to reassume their responsibilities as sovereign states in international affairs and thus qualify for membership in the UN.', 16.95, 15.99, 'paris-peace-conference.gif', 'paris-peace-conference-2.gif', 'paris-peace-conference-thumbnail.gif', 2),
+       (17, 'Sarah Bernhardt', 'The "Divine Sarah" said this about Americans: "You are younger than we as a race, you are perhaps barbaric, but what of it? You are still in the molding. Your spirit is superb. It is what helped us win the war." Perhaps we''re still barbaric but we''re still winning wars for them too!', 14.99, 0.00, 'sarah-bernhardt.gif', 'sarah-bernhardt-2.gif', 'sarah-bernhardt-thumbnail.gif', 0),
+       (18, 'Hunt', 'A scene from "Les Tres Riches Heures," a medieval "book of hours" containing the text for each liturgical hour of the day. This scene is from a 14th century painting.', 16.99, 15.95, 'hunt.gif', 'hunt-2.gif', 'hunt-thumbnail.gif', 2), 
+       (19, 'Italia', 'The War had just ended when this stamp was designed, and even so, there was enough optimism to show the destroyed oak tree sprouting again from its stump! What a beautiful T-shirt!', 22.00, 18.99, 'italia.gif', 'italia-2.gif', 'italia-thumbnail.gif', 2),
+       (20, 'Torch', 'The light goes on! Carry the torch with this T-shirt and be a beacon of hope for the world!', 19.99, 17.95, 'torch.gif', 'torch-2.gif', 'torch-thumbnail.gif', 2);
       --  (21, 'Espresso', 'The winged foot of Mercury speeds the Special Delivery mail to its destination. In a hurry? This T-shirt is for you!', 16.95, 0.00, 'espresso.gif', 'espresso-2.gif', 'espresso-thumbnail.gif', 0),
       --  (22, 'Galileo', 'This beautiful T-shirt does honor to one of Italy''s (and the world''s) most famous scientists. Show your appreciation for the education you''ve received!', 14.99, 0.00, 'galileo.gif', 'galileo-2.gif', 'galileo-thumbnail.gif', 0),
       --  (23, 'Italian Airmail', 'Thanks to modern Italian post, folks were able to reach out and touch each other. Or at least so implies this image. This is a very fast and friendly T-shirt--you''ll make friends with it!', 21.00, 17.99, 'italian-airmail.gif', 'italian-airmail-2.gif', 'italian-airmail-thumbnail.gif', 0),
