@@ -23,9 +23,9 @@ const port = process.env.PORT || 8080;
 //mysql://b8e9343b8899d6:2e4e9219@us-cdbr-east-04.cleardb.com/heroku_e4fdf0fa21e6848?reconnect=true
 const db_config = {
   host: 'us-cdbr-east-04.cleardb.com',
-  user: 'b336e74f09c4a1', // your database username
-  password: '962dce41', // your database password
-  database: 'heroku_f1498aee469145a',  // FYI export the tshirtshop.sql to this database
+  user: 'b8e9343b8899d6', // your database username
+  password: '2e4e9219', // your database password
+  database: 'heroku_e4fdf0fa21e6848',  // FYI export the tshirtshop.sql to this database
   multipleStatements: true
 }
 
