@@ -5,8 +5,6 @@
 
 -- USE shoppings;
 
--- Create tshirtshop tables
-
 -- Create department table
 CREATE TABLE `department` (
   `department_id` INT            NOT NULL  AUTO_INCREMENT,

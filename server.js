@@ -100,7 +100,7 @@ const customerRoutes = require('./routes/customer');
 const orderRoutes = require('./routes/order');
 
 app.get('/', function (request, response, next) {
-    db.query("SELECT * FROM category", function (error, rows) {
+    db.query("SELECT * FROM product", function (error, rows) {
         return response.json(rows);
     });
 });
