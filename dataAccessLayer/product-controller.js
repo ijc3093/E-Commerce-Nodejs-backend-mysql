@@ -117,7 +117,7 @@ const GetFilteredProducts = (request, response) => {
             filterSearchString = likeQuery.join(' OR ');
         } else{
             filterSearchString = `P.name like '%${request.body.paging.SearchString}%' 
-                                 OR P.description like '%${request.body.paging.SearchString}%'`;
+                 OR P.description like '%${request.body.paging.SearchString}%'`;
         }
         let query = `SELECT 
                         P.product_id AS 'ProductId',

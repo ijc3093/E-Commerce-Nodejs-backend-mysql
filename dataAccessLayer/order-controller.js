@@ -11,8 +11,8 @@ const CreateOrder = (request, response) => {
         const transporter = nodemailer.createTransport({
             service: 'gmail',
             auth: {
-                user: 'ajdarkslayer@gmail.com',
-                pass: 'Anjana@123'
+                user: 'isaaccuma@gmail.com',
+                pass: '123456$7'
             }
             // host: 'smtp.ethereal.email',
             // port: 587,
@@ -23,7 +23,7 @@ const CreateOrder = (request, response) => {
         });
 
         let mailOptions = {
-            from: 'ajdarkslayer@gmail.com',
+            from: 'isaaccuma@gmail.com',
             to: `${user.Email}`,
             subject: "Congratulations! Your order placed succesfully.", // Subject line
             text: `Hello ${user.Name}`, // plain text body
@@ -99,8 +99,8 @@ const SendTestMail = async ()=> {
     let transporter = nodemailer.createTransport({
         service: 'gmail',
             auth: {
-                user: 'ajdarkslayer@gmail.com',
-                pass: 'Anjana@123' 
+                user: 'isaaccuma@gmail.com',
+                pass: '123456$7' 
             }
     });
 
@@ -114,7 +114,7 @@ const SendTestMail = async ()=> {
 
     let mailOptions = {
         from: '"Dark Slayer 👻" <no-reply@dark.com>',
-        to: 'ajgihan@gmail.com',
+        to: 'isaaccuma@gmail.com',
         subject: "Order Details", // Subject line
         text: "test purpose", // plain text body
         html: `<b>test account ${remark} </b>`
