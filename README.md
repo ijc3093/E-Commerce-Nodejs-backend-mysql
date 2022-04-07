@@ -1,8 +1,7 @@
 # Display all data from MySQL using nodejs
 Write a RESTful service in Node.js for a company to purchase and sale product to the customer.
 
-# shopping-nodejs-express-mysql-backend
-Using Postman to get Nodejs to retrieve all data from the database in PRODUCT-AZURE-PDO running in (xampp). For frondend, please click this link: "https://github.com/ijc3093/Shoppings-React_Axios-Typescript.git" in the
+For frondend (Angular version 8.0.2), please click this link: "https://github.com/ijc3093/Frontend.git"
 
 
 # Mysql
@@ -21,8 +20,6 @@ Using Postman to get Nodejs to retrieve all data from the database in PRODUCT-AZ
 - Open another Visual Code studio (VSC)
 - Select New Terminal in the Top Terminal Tab
 - Type in the terminal: node server.js and press enter
-
-For frondend (Angular version 8.0.2), please click this link: "https://github.com/ijc3093/Frontend.git"
 
 Postman screen
 
