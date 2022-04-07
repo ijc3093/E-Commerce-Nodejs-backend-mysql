@@ -10,10 +10,11 @@
   "author": "IKE CHUKZ",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-fileupload": "^1.2.1",
     "firebase": "^8.6.3",
     "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
     "nodemailer": "^6.6.1"
   }
 }

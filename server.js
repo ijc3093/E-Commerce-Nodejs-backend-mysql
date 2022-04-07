@@ -1,7 +1,7 @@
 const express = require('express');
 const fileUpload = require('express-fileupload');
 const bodyParser = require('body-parser');
-const mysql = require('mysql');
+const mysql = require('mysql2');
 const path = require('path');
 const app = express();
 
@@ -21,22 +21,22 @@ const port = process.env.PORT || 8080;
 // the mysql.createConnection function takes in a configuration object which contains host, user, password and the database name.
 //mysql://ba9565c7d6951a:5230e113@us-cdbr-iron-east-02.cleardb.net/heroku_f254459ae2fc71b?reconnect=true 
 //mysql://b8e9343b8899d6:2e4e9219@us-cdbr-east-04.cleardb.com/heroku_e4fdf0fa21e6848?reconnect=true
+// const db_config = {
+//   host: 'us-cdbr-east-04.cleardb.com',
+//   user: 'b0d954228b2de3', // your database username
+//   password: 'ced00eb6', // your database password
+//   database: 'heroku_e742caad00cb973',  // FYI export the tshirtshop.sql to this database
+//   multipleStatements: true
+// }
+
+//This is for nodejs only that connected from mysql
 const db_config = {
-  host: 'us-cdbr-east-04.cleardb.com',
-  user: 'b0d954228b2de3', // your database username
-  password: 'ced00eb6', // your database password
+  host: '127.0.0.1',
+  user: 'root', // your database username
+  password: 'Merciful#100', // your database password
   database: 'heroku_e742caad00cb973',  // FYI export the tshirtshop.sql to this database
   multipleStatements: true
 }
-
-// //This is for nodejs only that connected from mysql
-// const db_config = {
-//   host: 'localhost',
-//   user: 'root', // your database username
-//   password: 'Merciful$100', // your database password
-//   database: 'tshirtshop',  // FYI export the tshirtshop.sql to this database
-//   multipleStatements: true
-// }
 
 var connection;
 
@@ -99,8 +99,8 @@ const shippingRoutes = require('./routes/shipping');
 const customerRoutes = require('./routes/customer');
 const orderRoutes = require('./routes/order');
 
-app.get('/', function (request, response, next) {
-    db.query("SELECT * FROM category", function (error, rows) {
+app.get('/api/product', function (request, response, next) {
+    db.query("SELECT * FROM product", function (error, rows) {
         return response.json(rows);
     });
 });
