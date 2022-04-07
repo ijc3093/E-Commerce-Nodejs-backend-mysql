@@ -33,7 +33,6 @@ Get data by Id
 
 # Category
 Get all categories
-
 ![Screenshot](https://github.com/ijc3093/E-Commerce-Nodejs-backend-mysql/blob/master/images/getCategory.png)
 
 
