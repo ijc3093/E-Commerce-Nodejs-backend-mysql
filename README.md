@@ -23,25 +23,21 @@ For frondend (Angular version 8.0.2), please click this link: "https://github.co
 
 Postman screen
 
-# Company
-User Listing
+# Product
+Get all products
+![Screenshot](https://github.com/ijc3093/E-Commerce-Nodejs-backend-mysql/blob/master/images/getALLProducts.png)
 
-![Screenshot](https://github.com/ijc3093/Nodejs-RestFul-Postman-IST341/blob/master/screen/Company/1_user_istening.png)
-
-# Department
-Get all data
-
-![Screenshot](https://github.com/ijc3093/Nodejs-RestFul-Postman-IST341/blob/master/screen/Departments/GET_ALL_DEPARTMENTS.png)
 
 Get data by Id
+![Screenshot](https://github.com/ijc3093/E-Commerce-Nodejs-backend-mysql/blob/master/images/getProductBYID.png)
 
-![Screenshot](https://github.com/ijc3093/Nodejs-RestFul-Postman-IST341/blob/master/screen/Departments/GET_BY_ID_DEPARTMENT.png)
+# Category
+Get all categories
+
+![Screenshot](https://github.com/ijc3093/E-Commerce-Nodejs-backend-mysql/blob/master/images/getCategory.png)
 
 
-Post new data
+# Department
+Get all departments
+![Screenshot](https://github.com/ijc3093/E-Commerce-Nodejs-backend-mysql/blob/master/images/getDepartment.png)
 
-![Screenshot](https://github.com/ijc3093/Nodejs-RestFul-Postman-IST341/blob/master/screen/Departments/POST_DEPARTMENT.png)
-
-Edit data
-
-![Screenshot](https://github.com/ijc3093/Nodejs-RestFul-Postman-IST341/blob/master/screen/Departments/PUT_DEPARTMENT.png)
